@@ -1,11 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 1440px;
+    height: 2592px;
+    background: #FFFFFF;
+
+}
 .logo{
     text-decoration: none;
 }
 .web{
     color:blue;
 }
-ul li a{
-    text-decoration: none;
-    list-style: none;
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+ header ul li {
+    list-style: none;
+    margin: 150px 10px ;
+
+}
+header ul li a{
+    text-decoration: none;
+
+    /* Studio */
+    width: 48px;
+    height: 24px;
+
+    /* Body Medium */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.02em;
+
+    /* NAVY BLUE */
+
+    color: #2E2F42;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+header ul li a:hover{
+    color: blue;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    height: 72px;
+    
+}
+.hero-section{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 1440px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+
+    height: 30em;
+    background-color: rgb(44, 41, 41);
+ 
+    width: 1440px;
+    height: 600px;
+    left: 0px;
+    top: 72px;
+}
+.hero-button{
+    background-color: blue;
+
+}
+
 
