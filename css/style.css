@@ -1,41 +1,32 @@
+/*Body CSS*/
 body{
     margin: 0;
     padding: 0;
     position: relative;
-    width: 1440px;
     height: 2592px;
     background: #FFFFFF;
+}
 
-}
-.logo{
-    text-decoration: none;
-}
-.web{
-    color:blue;
-}
+/*Header-Navbar CSS*/
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    
+header ul li a:hover{
+    color: blue;
 }
- header ul li {
-    list-style: none;
-    margin: 150px 10px ;
 
-}
 header ul li a{
     text-decoration: none;
 
@@ -44,60 +35,103 @@ header ul li a{
     height: 24px;
 
     /* Body Medium */
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
+    margin-left: 40px;
     letter-spacing: 0.02em;
-
-    /* NAVY BLUE */
-
     color: #2E2F42;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-header ul li a:hover{
-    color: blue;
 }
 
-header{
+header ul li {
+    list-style: none;
+}
+.menu-nav {
     display: flex;
     justify-content: center;
-    width: 1440px;
-    height: 72px;
-    
+
+    /* Auto layout */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 261px;
+    height: 24px;
+    margin-left: 76px;
 }
-.hero-section{
-    background-color: black;
-    color: white;
+.contact-section{
     display: flex;
-    width: 1440px;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 400px;
+    height: 24px;
+    top: 24px;
+}
+
+
+/* Logo CSS*/
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+}
+.web{
+    color:blue;
+}
+.studio{
+    color: #2E2F42;
+}
+
+/*Hero Section CSS*/
+.hero-section{
+
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     flex-direction: column;
 
-    height: 30em;
-    background-color: rgb(44, 41, 41);
- 
+    /* Specs of Backgroud*/
     width: 1440px;
     height: 600px;
     left: 0px;
     top: 72px;
+
+        /*Bg-Color*/
+    background-color: #2E2F42;
+}
+.hero-section h1{
+    width: 496px;
+    height: 120px;
+    /* Header 1 */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    /* or 107% */
+    letter-spacing: 0.02em;
+
+    /* WHITE */
+    color: #FFFFFF;
 }
 .hero-button{
-    background-color: blue;
+    width: 169px;
+    height: 56px;
 
+    /* IRIS */
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.hero-button:hover{
+    background-color: green;
 }
 
 
