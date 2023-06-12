@@ -16,6 +16,17 @@ header{
     left: 0px;
     top: 0px;
     padding: 0px 156px;;
+
+    /* Top line bg */
+
+
+box-sizing: border-box;
+
+/*Header background, team card background */
+background: #FFFFFF;
+/* CORNFLOWER */
+
+border-bottom: 1px solid #E7E9FC;
 }
 nav {
     display: flex;
@@ -42,6 +53,8 @@ header ul li a{
     margin-left: 40px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+
+
 }
 
 header ul li {
@@ -75,12 +88,44 @@ header ul li {
     text-decoration: none;
     font-weight: bold;
 }
-.web{
+.web-logo{
     /*iris*/
     color: #4D5AE5;
+    width: 44px;
+height: 21px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height, or 117% */
+
+letter-spacing: 0.03em;
+
+/* IRIS */
+
+color: #4D5AE5;
+
 }
-.studio{
+.studio-logo{
+    width: 71px;
+    height: 21px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height, or 117% */
+
+    letter-spacing: 0.03em;
+
+    /* NAVY BLUE */
+
     color: #2E2F42;
+
+
 }
 
 /*Hero Section CSS*/
@@ -93,7 +138,6 @@ header ul li {
     flex-direction: column;
 
     /* Specs of Backgroud*/
-    width: 1440px;
     height: 600px;
     left: 0px;
     top: 72px;
@@ -136,26 +180,58 @@ header ul li {
 /*Section 1 | Tag Line CSS*/
 .tag-line{
     padding: 0px 156px;
-    width: 1128px;
     height:344px;
 
 }
 .tag-line ul{
     list-style: none;
     display: flex;
+    
+    
+    justify-content: space-evenly;
+    align-items: flex-start;
 
     /* Auto layout */
-    flex-direction: row;
-    align-items: flex-start;
     margin-top: 120px;
-    gap: 24px;
+    
+}
+.tag-line h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.02em;
+
+    /* NAVY BLUE */
+
+    color: #2E2F42;
+}
+.tag-line p{
+    width: 264px;
+    height: 72px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.02em;
+
+    /* SLATE */
+
+    color: #434455;
+
 }
 
 
 /*Section what we are doing | Our Team CSS*/
 .task, .our-team{
     padding: 0px 156px;
-    width: 1128px;
     height:532px;
     display: flex;
     
@@ -192,6 +268,90 @@ background: #F4F4FD;
     align-items: flex-start;
     margin-top: 72px;
     gap: 24px;
+}
+.our-team li{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    height: 525px;
+
+   /* Header background, team card background*/
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-content{
+    /* Team Card Names */
+    width: 200px;
+    height: 24px;
+
+    /* Inside auto layout */
+    margin-top: 32px;
+}
+.card-content h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: 0.02em;
+
+    /* NAVY BLUE */
+    color: #2E2F42;
+}
+.card-content p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    /* SLATE */
+    color: #434455;
+}
+
+/*Footer CSS*/
+footer{
+    height: 312px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 156px;
+    /* NAVY BLUE */
+
+    background-color: #2E2F42;
+}
+.studio-color-footer{
+    color: #F4F4FD;
+}
+footer p{
+    width: 264px;
+    height: 72px;
+    left: 156px;
+
+    /* Body */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.02em;
+
+    /* CLOUD */
+
+    color: #F4F4FD;
 }
 
 
