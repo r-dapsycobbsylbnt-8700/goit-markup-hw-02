@@ -1,117 +1,76 @@
-/*Body CSS*/
-body{
-    margin: 0;
+/*Main CSS*/
+body {
     padding: 0;
-    position: relative;
-    height: 2592px;
+    margin: 0;
     background: #FFFFFF;
 }
 
-/*Header-Navbar CSS*/
-header{
+/* flex layout class selector */
+.display-flex {
+    display: flex;
+}
+
+.justify-ctn-spc-between {
+    justify-content: space-between;
+}
+
+.justify-ctn-spc-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-ctn-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-auto {
+    flex: auto;
+}
+
+
+
+/*Top line*/
+header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    box-sizing: border-box;
+    position: relative;
     height: 72px;
-    left: 0px;
-    top: 0px;
-    padding: 0px 156px;;
+    padding: 0px 156px;
 
-    /* Top line bg */
-
-
-box-sizing: border-box;
-
-/*Header background, team card background */
-background: #FFFFFF;
-/* CORNFLOWER */
-
-border-bottom: 1px solid #E7E9FC;
+    /* WHITE Header background, team card background */
+    background: #FFFFFF;
+    /* CORNFLOWER */
+    border-bottom: 1px solid #E7E9FC;
 }
-nav {
+
+nav,
+.contact-section {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-header ul li a:hover{/* IRIS */
-    /*iris*/
-    color: #4D5AE5;
-}
-header ul li a{
-    text-decoration: none;
-
-    /* Studio */
-    width: 48px;
-    height: 24px;
-
-    /* Body Medium */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 40px;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-
-
-}
-
-header ul li {
     list-style: none;
-}
-.menu-nav {
-    display: flex;
-    justify-content: center;
-
-    /* Auto layout */
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-    width: 261px;
-    height: 24px;
-    margin-left: 76px;
-}
-.contact-section{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 400px;
-    height: 24px;
-    top: 24px;
+    flex: auto;
+    justify-content: space-evenly;
 }
 
+.contact-section {
+    padding-left: 125px;
+}
 
-/* Logo CSS*/
-.logo{
+.logo {
+    /* Logo */
     text-decoration: none;
-    font-weight: bold;
+
 }
-.web-logo{
-    /*iris*/
-    color: #4D5AE5;
+
+.web-logo,
+.studio-logo {
+    /* Web */
     width: 44px;
-height: 21px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-/* identical to box height, or 117% */
-
-letter-spacing: 0.03em;
-
-/* IRIS */
-
-color: #4D5AE5;
-
-}
-.studio-logo{
-    width: 71px;
     height: 21px;
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -119,83 +78,168 @@ color: #4D5AE5;
     line-height: 21px;
     /* identical to box height, or 117% */
 
+    /* display: flex;
+    align-items: center; */
     letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* IRIS */
+    color: #4D5AE5;
+}
+
+.studio-logo {
+    /* NAVY BLUE */
+    color: #2E2F42;
+}
+
+
+
+.menu-nav {
+    /* Menu Nav */
+    /* Auto layout */
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    height: 24px;
+    list-style: none;
+}
+
+.studio,
+.portfolio,
+.contacts {
+    /* Body Medium */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
     /* NAVY BLUE */
-
     color: #2E2F42;
-
-
 }
 
-/*Hero Section CSS*/
-.hero-section{
 
+.emails,
+.telephone {
+    /* Body */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    /* SLATE */
+    color: #434455;
+}
+
+.studio:hover,
+.portfolio:hover,
+.contacts:hover,
+.emails:hover,
+.telephone:hover {
+    /* IRIS */
+    color: #4D5AE5;
+}
+
+
+/*-------------------------------------------------------------------*/
+/*Hero Section*/
+.hero-section {
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    flex-direction: column;
-
-    /* Specs of Backgroud*/
     height: 600px;
     left: 0px;
-    top: 72px;
+    flex-direction: column;
 
-        /*Bg-Color*/
-    background-color: #2E2F42;
+    /* NAVY BLUE */
+    background: #2E2F42;
 }
-.hero-section h1{
-    width: 496px;
-    height: 120px;
-    /* Header 1 */
 
+h1 {
+    /* Header 1 */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
     /* or 107% */
+
+    text-align: center;
     letter-spacing: 0.02em;
 
     /* WHITE */
     color: #FFFFFF;
 }
-.hero-button{
+
+button {
+    /* Button */
     width: 169px;
     height: 56px;
 
     /* IRIS */
-    background-color: #4D5AE5;
+    background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: white;
+
+    /* Order Service */
+    /* Button Text */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-}
-.hero-button:hover{
-    background-color: green;
+    line-height: 20px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    /* WHITE */
+    color: #FFFFFF;
 }
 
-/*Section 1 | Tag Line CSS*/
-.tag-line{
-    padding: 0px 156px;
-    height:344px;
-
+.hero-button:hover {
+    /* IRIS */
+    /* background: #4D5AE5; */
+    background: orange;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
 }
-.tag-line ul{
-    list-style: none;
+
+
+
+
+/*Section 1*/
+.tag-line {
+    height: 300px;
+    background: #FFFFFF;
     display: flex;
-    
-    
-    justify-content: space-evenly;
-    align-items: flex-start;
-
-    /* Auto layout */
-    margin-top: 120px;
-    
+    padding: 0px 156px;
+    align-items: center;
 }
-.tag-line h3{
+
+.tags-box {
+    display: flex;
+    flex: auto;
+    gap: 10px;
+    list-style: none;
+    padding: 0px;
+}
+
+h3 {
+    /* Strategy */
+    width: 264px;
+    height: 24px;
+
+    /* Header 3 */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -206,49 +250,47 @@ color: #4D5AE5;
     letter-spacing: 0.02em;
 
     /* NAVY BLUE */
-
     color: #2E2F42;
 }
-.tag-line p{
-    width: 264px;
-    height: 72px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
 
-    letter-spacing: 0.02em;
-
-    /* SLATE */
-
-    color: #434455;
+/*Section 2*/
+.task {
+    background: #FFFFFF;
 
 }
-
 
 /*Section what we are doing | Our Team CSS*/
-.task, .our-team{
-    padding: 0px 156px;
-    height:532px;
+.task,
+.our-team {
+    height: 800px;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
+    padding: 0px 156px;
+
 }
-.our-team{
+
+.box-images {
+    display: flex;
+    flex: auto;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.our-team {
+    padding-top: 72px;
     height: 732px;
-    left: 0px;
-    top: 1548px;
 
-/* CLOUD */
+    /* CLOUD */
 
-background: #F4F4FD;
+    background: #F4F4FD;
 }
 
-.task h2, .our-team h2{
+.task h2,
+.our-team h2 {
     /* Header 2 */
     font-family: 'Roboto';
     font-style: normal;
@@ -259,100 +301,57 @@ background: #F4F4FD;
     /* NAVY BLUE */
     color: #2E2F42;
 }
-.task ul, .our-team ul{
+
+.our-team ul {
     list-style: none;
     display: flex;
-
+    flex: auto;
     /* Auto layout */
-    flex-direction: row;
-    align-items: flex-start;
     margin-top: 72px;
-    gap: 24px;
+    gap: 40px;
 }
-.our-team li{
+
+.our-team li {
     display: flex;
+    flex: auto;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    
-    
     height: 525px;
-
-   /* Header background, team card background*/
+    /* Header background, team card background*/
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
-.card-content{
-    /* Team Card Names */
-    width: 200px;
-    height: 24px;
-
-    /* Inside auto layout */
-    margin-top: 32px;
-}
-.card-content h3{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    letter-spacing: 0.02em;
-
-    /* NAVY BLUE */
-    color: #2E2F42;
-}
-.card-content p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    /* SLATE */
-    color: #434455;
+.card-content {
+    margin-top: 30px;
 }
 
-/*Footer CSS*/
-footer{
+/*Section 3*/
+.our-team {
+    height: 832px;
+    left: 0px;
+}
+
+/*Footer */
+footer {
+    padding: 0px 156px;
     height: 312px;
-
-    display: flex;
-    align-items: center;
-    padding-left: 156px;
     /* NAVY BLUE */
+    background: #2E2F42;
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    align-items: center;
 
-    background-color: #2E2F42;
-}
-.studio-color-footer{
-    color: #F4F4FD;
-}
-footer p{
-    width: 264px;
-    height: 72px;
-    left: 156px;
-
-    /* Body */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    letter-spacing: 0.02em;
-
-    /* CLOUD */
-
-    color: #F4F4FD;
 }
 
+.statement-footer {
+    color: #FFFFFF;
+}
 
-
+.studio-color-footer {
+    /* NAVY BLUE */
+    color: #ffffff;
+}
