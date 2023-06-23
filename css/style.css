@@ -5,31 +5,6 @@ body {
     background: #FFFFFF;
 }
 
-/* flex layout class selector */
-.display-flex {
-    display: flex;
-}
-
-.justify-ctn-spc-between {
-    justify-content: space-between;
-}
-
-.justify-ctn-spc-evenly {
-    justify-content: space-evenly;
-}
-
-.justify-ctn-center {
-    justify-content: center;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.flex-auto {
-    flex: auto;
-}
-
 
 
 /*Top line*/
@@ -37,7 +12,6 @@ header {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    position: relative;
     height: 72px;
     padding: 0px 156px;
 
@@ -53,11 +27,16 @@ nav,
     align-items: center;
     list-style: none;
     flex: auto;
-    justify-content: space-evenly;
+    gap: 76px;
+
 }
 
 .contact-section {
-    padding-left: 125px;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 40px;
+    margin: 0px;
+    align-items: center;
 }
 
 .logo {
@@ -99,10 +78,11 @@ nav,
     /* Auto layout */
     display: flex;
     flex: auto;
-    justify-content: space-evenly;
     padding-left: 0px;
     height: 24px;
     list-style: none;
+    gap: 40px;
+    margin: 0px;
 }
 
 .studio,
@@ -236,7 +216,7 @@ button {
 
 h3 {
     /* Strategy */
-    width: 264px;
+    /* width: 264px; */
     height: 24px;
 
     /* Header 3 */
