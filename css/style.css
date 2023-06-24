@@ -1,124 +1,65 @@
-/*Main CSS*/
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
     background: #FFFFFF;
 }
 
-
-
+/*-------------------------------------------------------------------*/
+/*                              NAVIGATION CSS                       */
+/*-------------------------------------------------------------------*/
 /*Top line*/
 header {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
     height: 72px;
+    display: flex;
     padding: 0px 156px;
+    box-sizing: border-box;
+    justify-content: space-between;
 
-    /* WHITE Header background, team card background */
-    background: #FFFFFF;
-    /* CORNFLOWER */
-    border-bottom: 1px solid #E7E9FC;
+    background: var(--white, #FFF);
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
 }
 
 nav,
 .contact-section {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    flex: auto;
     gap: 76px;
+    list-style: none;
+    align-items: center;
+    display: inline-flex;
 
 }
 
 .contact-section {
-    flex-wrap: wrap;
-    justify-content: right;
     gap: 40px;
-    margin: 0px;
-    align-items: center;
+    padding: 0px;
+    justify-content: right;
 }
-
-.logo {
-    /* Logo */
-    text-decoration: none;
-
-}
-
-.web-logo,
-.studio-logo {
-    /* Web */
-    width: 44px;
-    height: 21px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height, or 117% */
-
-    /* display: flex;
-    align-items: center; */
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    /* IRIS */
-    color: #4D5AE5;
-}
-
-.studio-logo {
-    /* NAVY BLUE */
-    color: #2E2F42;
-}
-
-
 
 .menu-nav {
     /* Menu Nav */
-    /* Auto layout */
-    display: flex;
-    flex: auto;
-    padding-left: 0px;
+    gap: 40px;
     height: 24px;
     list-style: none;
-    gap: 40px;
-    margin: 0px;
+    padding-left: 0px;
+    display: inline-flex;
 }
 
 .studio,
 .portfolio,
-.contacts {
-    /* Body Medium */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
+.contacts,
+.email,
+.telephone {
     font-size: 16px;
+    font-weight: 500;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.02em;
+    font-family: 'Roboto';
     text-decoration: none;
-
-    /* NAVY BLUE */
-    color: #2E2F42;
+    letter-spacing: 0.32px;
+    color: var(--navyblue, #2E2F42);
 }
 
-
-.emails,
+.email,
 .telephone {
-    /* Body */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    /* SLATE */
-    color: #434455;
+    color: var(--slate, #434455);
 }
 
 .studio:hover,
@@ -126,129 +67,139 @@ nav,
 .contacts:hover,
 .emails:hover,
 .telephone:hover {
-    /* IRIS */
-    color: #4D5AE5;
+    color: var(--ocean, #404BBF);
+}
+
+/*-------------------------------------------------------------------*/
+/*                          LOGO CSS                                 */
+/*-------------------------------------------------------------------*/
+.logo {
+    text-decoration: none;
+}
+
+.web-logo,
+.studio-logo {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    font-family: 'Raleway';
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.web-logo {
+    width: 44px;
+    color: var(--iris, #4D5AE5);
+}
+
+.studio-logo {
+    width: 71px;
+    color: var(--navyblue, #2E2F42);
 }
 
 
 /*-------------------------------------------------------------------*/
-/*Hero Section*/
+/*                         HERO SECTION CSS                          */
+/*-------------------------------------------------------------------*/
 .hero-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 600px;
-    left: 0px;
+    padding: 0px 156px;
+    align-items: center;
     flex-direction: column;
-
-    /* NAVY BLUE */
-    background: #2E2F42;
+    justify-content: center;
+    background: var(--navyblue, #2E2F42);
 }
 
-h1 {
-    /* Header 1 */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+/* Header 1 */
+.hero-h1 {
+    width: 496px;
     font-size: 56px;
+    font-weight: 700;
     line-height: 60px;
-    /* or 107% */
-
     text-align: center;
-    letter-spacing: 0.02em;
-
-    /* WHITE */
-    color: #FFFFFF;
+    font-family: 'Roboto';
+    letter-spacing: 1.12px;
+    color: var(--white, #FFF);
 }
 
-button {
-    /* Button */
-    width: 169px;
-    height: 56px;
+/* Order Service | Button Text */
+.hero-button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 16px 32px;
+    font-family: 'Roboto';
+    letter-spacing: 0.64px;
+    color: var(--white, #FFF);
 
-    /* IRIS */
+    border-radius: 4px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    /* Order Service */
-    /* Button Text */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height, or 150% */
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    /* WHITE */
-    color: #FFFFFF;
 }
 
 .hero-button:hover {
-    /* IRIS */
-    /* background: #4D5AE5; */
-    background: orange;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 4px;
+    background: var(--ocean, #404BBF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 
-
-
-/*Section 1*/
+/*-------------------------------------------------------------------*/
+/*                         SECTION-1 CSS                             */
+/*-------------------------------------------------------------------*/
 .tag-line {
+    display: flex;
     height: 300px;
-    background: #FFFFFF;
-    display: flex;
-    padding: 0px 156px;
     align-items: center;
+    padding: 120px 156px;
+    background: #FFFFFF;
 }
 
-.tags-box {
-    display: flex;
-    flex: auto;
+.tag-box {
     gap: 10px;
-    list-style: none;
+    flex: auto;
     padding: 0px;
+    flex-wrap: wrap;
+    list-style: none;
+    display: inline-flex;
 }
 
+.feature {
+    gap: 8px;
+    flex: auto;
+    width: 264px;
+}
+
+/* Header 3 */
 h3 {
-    /* Strategy */
-    /* width: 264px; */
-    height: 24px;
-
-    /* Header 3 */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
+    margin: 0px;
     font-size: 20px;
+    font-weight: 500;
     line-height: 24px;
-    /* identical to box height, or 120% */
-
-    letter-spacing: 0.02em;
-
-    /* NAVY BLUE */
+    letter-spacing: 0.4px;
+    font-family: 'Roboto';
     color: #2E2F42;
 }
 
-
-/*Section 2*/
-.task {
-    background: #FFFFFF;
-
+.feature p,
+.card-content p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    letter-spacing: 0.32px;
+    margin: 8px 0px 0px 0px;
+    color: var(--slate, #434455);
 }
 
-/*Section what we are doing | Our Team CSS*/
-.task,
-.our-team {
-    height: 800px;
+.task {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 0px 156px;
-
+    gap: 60px;
+    margin-bottom: 120px;
 }
 
 .box-images {
@@ -258,37 +209,31 @@ h3 {
     list-style: none;
     flex-wrap: wrap;
     padding: 0px;
+    justify-content: center;
 }
 
-.our-team {
-    padding-top: 72px;
-    height: 732px;
-
-    /* CLOUD */
-
-    background: #F4F4FD;
-}
-
-.task h2,
-.our-team h2 {
+h2 {
     /* Header 2 */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
+    margin: 0px;
+    text-align: center;
 
     /* NAVY BLUE */
     color: #2E2F42;
 }
 
-.our-team ul {
-    list-style: none;
+.our-team {
     display: flex;
-    flex: auto;
-    /* Auto layout */
-    margin-top: 72px;
-    gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 156px;
+    gap: 60px;
+    background: var(--cloud, #F4F4FD);
 }
 
 .our-team li {
@@ -298,6 +243,7 @@ h3 {
     align-items: center;
     flex-direction: column;
     height: 525px;
+
     /* Header background, team card background*/
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -306,12 +252,6 @@ h3 {
 
 .card-content {
     margin-top: 30px;
-}
-
-/*Section 3*/
-.our-team {
-    height: 832px;
-    left: 0px;
 }
 
 /*Footer */
