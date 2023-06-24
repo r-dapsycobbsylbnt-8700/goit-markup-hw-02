@@ -33,7 +33,6 @@ li img {
 
     letter-spacing: 0.02em;
     margin: 0px 0px 0px 15px;
-
 }
 
 .images-gallery {
@@ -45,6 +44,7 @@ li img {
     row-gap: 48px;
     margin-top: 30px;
     padding: 0px;
+    padding-bottom: 120px;
 }
 
 .buttons li {
