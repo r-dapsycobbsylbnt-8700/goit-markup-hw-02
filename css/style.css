@@ -1,7 +1,18 @@
 body {
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
+    color: var(--navyblue, #2E2F42);
+    font-family: 'Roboto', sans-serif;
     background: #FFFFFF;
+}
+
+/* Flex Section */
+header,
+footer,
+.hero-section,
+.task {
+    display: flex;
+    padding: 0px 156px;
 }
 
 /*-------------------------------------------------------------------*/
@@ -10,11 +21,8 @@ body {
 /*Top line*/
 header {
     height: 72px;
-    display: flex;
-    padding: 0px 156px;
     box-sizing: border-box;
     justify-content: space-between;
-
     background: var(--white, #FFF);
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
 }
@@ -34,8 +42,8 @@ nav,
     justify-content: right;
 }
 
+/* Menu Nav */
 .menu-nav {
-    /* Menu Nav */
     gap: 40px;
     height: 24px;
     list-style: none;
@@ -54,7 +62,6 @@ nav,
     font-family: 'Roboto';
     text-decoration: none;
     letter-spacing: 0.32px;
-    color: var(--navyblue, #2E2F42);
 }
 
 .email,
@@ -65,7 +72,7 @@ nav,
 .studio:hover,
 .portfolio:hover,
 .contacts:hover,
-.emails:hover,
+.email:hover,
 .telephone:hover {
     color: var(--ocean, #404BBF);
 }
@@ -94,7 +101,6 @@ nav,
 
 .studio-logo {
     width: 71px;
-    color: var(--navyblue, #2E2F42);
 }
 
 
@@ -102,13 +108,12 @@ nav,
 /*                         HERO SECTION CSS                          */
 /*-------------------------------------------------------------------*/
 .hero-section {
-    display: flex;
     height: 600px;
-    padding: 0px 156px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background: var(--navyblue, #2E2F42);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Header 1 */
@@ -118,7 +123,6 @@ nav,
     font-weight: 700;
     line-height: 60px;
     text-align: center;
-    font-family: 'Roboto';
     letter-spacing: 1.12px;
     color: var(--white, #FFF);
 }
@@ -129,7 +133,6 @@ nav,
     font-weight: 500;
     line-height: 20px;
     padding: 16px 32px;
-    font-family: 'Roboto';
     letter-spacing: 0.64px;
     color: var(--white, #FFF);
 
@@ -148,6 +151,23 @@ nav,
 /*-------------------------------------------------------------------*/
 /*                         SECTION-1 CSS                             */
 /*-------------------------------------------------------------------*/
+h2 {
+    /* Header 2 */
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
 .tag-line {
     display: flex;
     height: 300px;
@@ -171,15 +191,26 @@ nav,
     width: 264px;
 }
 
-/* Header 3 */
-h3 {
-    margin: 0px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-    font-family: 'Roboto';
-    color: #2E2F42;
+/*-------------------------------------------------------------------*/
+/*                         SECTION-2 CSS                             */
+/*-------------------------------------------------------------------*/
+
+.task {
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 120px;
+    flex-direction: column;
+}
+
+.box-images {
+    gap: 20px;
+    flex: auto;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
 }
 
 .feature p,
@@ -187,62 +218,30 @@ h3 {
 .statement-footer {
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Roboto';
     letter-spacing: 0.32px;
     margin: 8px 0px 0px 0px;
     color: var(--slate, #434455);
 }
 
-.task {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 156px;
-    gap: 60px;
-    margin-bottom: 120px;
-}
-
-.box-images {
-    display: flex;
-    flex: auto;
-    gap: 20px;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0px;
-    justify-content: center;
-}
-
-h2 {
-    /* Header 2 */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    margin: 0px;
-    text-align: center;
-
-    /* NAVY BLUE */
-    color: #2E2F42;
-}
-
+/*-------------------------------------------------------------------*/
+/*                         SECTION-3 CSS                             */
+/*-------------------------------------------------------------------*/
 .our-team {
+    gap: 60px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
     padding: 120px 156px;
-    gap: 60px;
+    flex-direction: column;
     background: var(--cloud, #F4F4FD);
 }
 
 .our-team li {
+    /* height: 525px; */
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    height: 525px;
 
     /* Header background, team card background*/
     background: #FFFFFF;
@@ -251,27 +250,103 @@ h2 {
 }
 
 .card-content {
-    margin-top: 30px;
+    margin: 30px 0px;
+    padding: 0px 16px;
 }
 
-/*Footer */
-footer {
-    padding: 0px 156px;
-    height: 312px;
-    /* NAVY BLUE */
-    background: #2E2F42;
-    display: flex;
-    flex-direction: row;
-    flex: auto;
-    align-items: center;
+/*-------------------------------------------------------------------*/
+/*                      PORTFOLIO.HTML CSS                           */
+/*                                                                   */
+/*-------------------------------------------------------------------*/
+/*                PORTFOLIO SECTION FILTER BUTTON'S                  */
+/*-------------------------------------------------------------------*/
+.button-filter {
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
 
+.button-list {
+    gap: 24px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.button-list li button {
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Roboto';
+    letter-spacing: 0.64px;
+    cursor: pointer;
+
+    color: var(--iris, #4D5AE5);
+
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
+    border: 1px solid var(--cornflower, #E7E9FC);
+}
+
+.button-list li button:hover {
+    color: var(--white, #FFF);
+    background: var(--ocean, #404BBF);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+/*-------------------------------------------------------------------*/
+/*                    SECTION ROW FILTER IMAGES                      */
+/*-------------------------------------------------------------------*/
+.row-images-filter,
+.button-filter {
+    padding: 0px 156px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+
+    gap: 15px;
+    padding: 0px;
+    row-gap: 48px;
+    margin-top: 30px;
+    padding-bottom: 120px;
+}
+
+.project-cards li {
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
+}
+
+
+/*-------------------------------------------------------------------*/
+/*                         FOOTER CSS                                */
+/*-------------------------------------------------------------------*/
+footer {
+    height: 312px;
+    align-items: center;
+    flex-direction: row;
+    background: var(--navyblue, #2E2F42);
 }
 
 .statement-footer {
-    color: #FFFFFF;
+    color: var(--cloud, #F4F4FD);
 }
 
 .studio-color-footer {
-    /* NAVY BLUE */
-    color: #ffffff;
+    color: var(--cloud, #F4F4FD);
+}
+
+.footer-holder {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }
