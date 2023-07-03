@@ -108,7 +108,7 @@ body {
     font-weight: 700;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 1.5em;
+    letter-spacing: .045em;
     color: var(--navyblue);
 }
 
