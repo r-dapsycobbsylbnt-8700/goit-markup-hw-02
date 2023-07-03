@@ -1,352 +1,151 @@
+:root {
+    --white: #FFF;
+    --iris: #4D5AE5;
+    --cloud: #F4F4FD;
+    --slate: #434455;
+    --ocean: #404BBF;
+    --navyblue: #2E2F42;
+    --cornflower: #E7E9FC;
+}
+
 body {
-    padding: 0px;
-    margin: 0px;
-    color: var(--navyblue, #2E2F42);
-    font-family: 'Roboto', sans-serif;
-    background: #FFFFFF;
-}
-
-/* Flex Section */
-header,
-footer,
-.hero-section,
-.task {
-    display: flex;
-    padding: 0px 156px;
-}
-
-/*-------------------------------------------------------------------*/
-/*                              NAVIGATION CSS                       */
-/*-------------------------------------------------------------------*/
-/*Top line*/
-header {
-    height: 72px;
-    box-sizing: border-box;
-    justify-content: space-between;
-    background: var(--white, #FFF);
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
-}
-
-nav,
-.contact-section {
-    gap: 76px;
-    list-style: none;
-    align-items: center;
-    display: inline-flex;
-
-}
-
-.contact-section {
-    gap: 40px;
-    padding: 0px;
-    justify-content: right;
-}
-
-/* Menu Nav */
-.menu-nav {
-    gap: 40px;
-    height: 24px;
-    list-style: none;
-    padding-left: 0px;
-    display: inline-flex;
-}
-
-.studio,
-.portfolio,
-.contacts,
-.email,
-.telephone {
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    font-family: 'Roboto';
-    text-decoration: none;
-    letter-spacing: 0.32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-family: "Roboto", sans-serif;
+
+    color: var(--white);
+    background-color: var(--white);
 }
 
-.email,
-.telephone {
-    color: var(--slate, #434455);
+.list {
+    list-style: none;
 }
 
-.studio:hover,
-.portfolio:hover,
-.contacts:hover,
-.email:hover,
-.telephone:hover {
-    color: var(--ocean, #404BBF);
-}
-
-/*-------------------------------------------------------------------*/
-/*                          LOGO CSS                                 */
-/*-------------------------------------------------------------------*/
+/* LOGO CSS */
 .logo {
-    text-decoration: none;
-}
-
-.web-logo,
-.studio-logo {
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px;
-    font-family: 'Raleway';
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
+    line-height: 1.3;
+    color: var(--iris);
+    font-family: Raleway;
+    letter-spacing: 0.03375em;
 }
 
-.web-logo {
-    width: 44px;
-    color: var(--iris, #4D5AE5);
+.studio-logo,
+.page {
+    color: var(--navyblue);
 }
 
-.studio-logo {
-    width: 71px;
+/* NAVIGATION CSS */
+.page,
+.item {
+    font-weight: 500;
+    text-decoration: none;
 }
 
+.current,
+.page:hover,
+.page:focus,
+.item:hover,
+.item:focus {
+    color: var(--ocean);
+}
 
-/*-------------------------------------------------------------------*/
-/*                         HERO SECTION CSS                          */
-/*-------------------------------------------------------------------*/
-.hero-section {
-    height: 600px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--navyblue, #2E2F42);
+/* HERO SECTION CSS */
+.bg-hero {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Header 1 */
-.hero-h1 {
-    width: 496px;
+.hero-title {
     font-size: 56px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.36;
+    letter-spacing: 0.07em;
     text-align: center;
-    letter-spacing: 1.12px;
-    color: var(--white, #FFF);
 }
 
-/* Order Service | Button Text */
-.hero-button {
-    font-size: 16px;
+.button {
+    font-family: inherit;
+    font-size: inherit;
     font-weight: 500;
-    line-height: 20px;
-    padding: 16px 32px;
-    letter-spacing: 0.64px;
-    color: var(--white, #FFF);
-
+    line-height: inherit;
     border-radius: 4px;
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white);
+    letter-spacing: 0.04em;
 }
 
-.hero-button:hover {
-    border-radius: 4px;
-    background: var(--ocean, #404BBF);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+.primary {
+    background: var(--iris);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.primary:hover,
+.primary:focus {
+    background: var(--ocean);
+}
 
-/*-------------------------------------------------------------------*/
-/*                         SECTION-1 CSS                             */
-/*-------------------------------------------------------------------*/
-h2 {
+.filter {
+    color: var(--navyblue);
+    background: var(--cloud);
+    border: 1px solid var(--cornflower);
+}
+
+.filter.current,
+.filter:hover,
+.filter:focus {
+    color: var(--white);
+    background: var(--ocean);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+/*    SECTION-1 |SECTION-2 | SECTION-3 CSS   */
+.section-title {
     /* Header 2 */
-    margin: 0px;
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.17;
     text-align: center;
+    letter-spacing: 1.5em;
+    color: var(--navyblue);
 }
 
-h3 {
-    margin: 0px;
+.bg-team {
+    background: var(--cloud);
+}
+
+.title,
+.name,
+.project-name {
+    /* Header 3 */
     font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.025em;
+    color: var(--navyblue);
 }
 
-.tag-line {
-    display: flex;
-    height: 300px;
-    align-items: center;
-    padding: 120px 156px;
-    background: #FFFFFF;
+.item,
+.description,
+.position,
+.project-type {
+    color: var(--slate);
 }
 
-.tag-box {
-    gap: 10px;
-    flex: auto;
-    padding: 0px;
-    flex-wrap: wrap;
-    list-style: none;
-    display: inline-flex;
-}
-
-.feature {
-    gap: 8px;
-    flex: auto;
-    width: 264px;
-}
-
-/*-------------------------------------------------------------------*/
-/*                         SECTION-2 CSS                             */
-/*-------------------------------------------------------------------*/
-
-.task {
-    gap: 60px;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 120px;
-    flex-direction: column;
-}
-
-.box-images {
-    gap: 20px;
-    flex: auto;
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
-}
-
-.feature p,
-.card-content p,
-.statement-footer {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-    margin: 8px 0px 0px 0px;
-    color: var(--slate, #434455);
-}
-
-/*-------------------------------------------------------------------*/
-/*                         SECTION-3 CSS                             */
-/*-------------------------------------------------------------------*/
-.our-team {
-    gap: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 120px 156px;
-    flex-direction: column;
-    background: var(--cloud, #F4F4FD);
-}
-
-.our-team li {
-    /* height: 525px; */
-    display: flex;
+.name,
+.position {
     text-align: center;
-    align-items: center;
-    flex-direction: column;
-
-    /* Header background, team card background*/
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.card-content {
-    margin: 30px 0px;
-    padding: 0px 16px;
-}
-
-/*-------------------------------------------------------------------*/
-/*                      PORTFOLIO.HTML CSS                           */
-/*                                                                   */
-/*-------------------------------------------------------------------*/
-/*                PORTFOLIO SECTION FILTER BUTTON'S                  */
-/*-------------------------------------------------------------------*/
-.button-filter {
-    margin-top: 96px;
-    margin-bottom: 72px;
-}
-
-.button-list {
-    gap: 24px;
-    margin: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    align-content: center;
-    justify-content: center;
-    padding-inline-start: 0px;
-}
-
-.button-list li button {
-    height: 48px;
-    padding: 0 20px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    font-family: 'Roboto';
-    letter-spacing: 0.64px;
-    cursor: pointer;
-
-    color: var(--iris, #4D5AE5);
-
-    border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
-    border: 1px solid var(--cornflower, #E7E9FC);
-}
-
-.button-list li button:hover {
-    color: var(--white, #FFF);
-    background: var(--ocean, #404BBF);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-
-}
-
-/*-------------------------------------------------------------------*/
-/*                    SECTION ROW FILTER IMAGES                      */
-/*-------------------------------------------------------------------*/
-.row-images-filter,
-.button-filter {
-    padding: 0px 156px;
-}
-
-.project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
-
-    gap: 15px;
-    padding: 0px;
-    row-gap: 48px;
-    margin-top: 30px;
-    padding-bottom: 120px;
-}
-
-.project-cards li {
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFF);
 }
 
 
-/*-------------------------------------------------------------------*/
-/*                         FOOTER CSS                                */
-/*-------------------------------------------------------------------*/
-footer {
-    height: 312px;
-    align-items: center;
-    flex-direction: row;
-    background: var(--navyblue, #2E2F42);
+/* FOOTER CSS */
+.bg-footer,
+.bg-hero {
+    background: var(--navyblue);
 }
 
-.statement-footer {
-    color: var(--cloud, #F4F4FD);
-}
-
-.studio-color-footer {
-    color: var(--cloud, #F4F4FD);
-}
-
-.footer-holder {
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
+.footer-description,
+.studio-logo-footer {
+    color: var(--cloud);
 }
