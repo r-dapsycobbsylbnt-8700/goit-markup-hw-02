@@ -95,7 +95,8 @@ same property and the font property inherit form global body decleration*/
     background-color: var(--cloud);
     font-weight: 500;
     font-size: 16px;
-    border: 1px solid var(--cornflower);
+    line-height: 1.62;
+
 }
 
 .button.filter.current,
@@ -124,8 +125,11 @@ same property and the font property inherit form global body decleration*/
 .projects .name {
     color: var(--navyblue);
     font-weight: 700;
-    font-size: 20px;
     line-height: 1.14;
+}
+
+.benefits .title {
+    font-size: 14px;
 }
 
 .benefits .description {
@@ -151,11 +155,10 @@ same property and the font property inherit form global body decleration*/
 
 .project {
     text-decoration: none;
+    /* cursor: pointer; */
 }
 
 .projects .name {
-    color: var(--navyblue);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
